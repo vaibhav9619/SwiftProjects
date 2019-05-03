@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FacebookIntegration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dLn-cs-abD">
+                                <rect key="frame" x="56.5" y="182" width="262.5" height="33"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2hF-ei-ypr">
+                                <rect key="frame" x="56.5" y="242" width="262.5" height="33.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bcw-oK-HfK">
+                                <rect key="frame" x="56.5" y="302.5" width="262.5" height="33.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hg3-aT-U9R">
+                                <rect key="frame" x="56.5" y="363" width="262.5" height="33.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hma-hW-1mx">
+                                <rect key="frame" x="94" y="63" width="187.5" height="33.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Login Page">
+                                        <attributes>
+                                            <font key="NSFont" size="35" name="BradleyHandITCTT-Bold"/>
+                                            <font key="NSOriginalFont" size="35" name="BradleyHandITCTT-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88n-nm-4lY">
+                                <rect key="frame" x="112.5" y="404" width="150" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="Login Via Facebook">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="facebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XgP-bz-gly"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="88n-nm-4lY" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.05" id="4Hk-KJ-Lr8"/>
+                            <constraint firstItem="dLn-cs-abD" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.05" id="5gT-UR-3ib"/>
+                            <constraint firstItem="hma-hW-1mx" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="78i-Mx-N1A"/>
+                            <constraint firstItem="2hF-ei-ypr" firstAttribute="height" secondItem="dLn-cs-abD" secondAttribute="height" id="GOK-It-jjd"/>
+                            <constraint firstItem="dLn-cs-abD" firstAttribute="top" secondItem="hma-hW-1mx" secondAttribute="bottom" constant="85.5" id="LgI-gy-iDU"/>
+                            <constraint firstItem="bcw-oK-HfK" firstAttribute="width" secondItem="2hF-ei-ypr" secondAttribute="width" id="MoD-q8-zJx"/>
+                            <constraint firstItem="2hF-ei-ypr" firstAttribute="width" secondItem="dLn-cs-abD" secondAttribute="width" id="MzQ-KX-eSB"/>
+                            <constraint firstItem="88n-nm-4lY" firstAttribute="top" secondItem="Hg3-aT-U9R" secondAttribute="bottom" constant="7.5" id="Rba-Zz-0D8"/>
+                            <constraint firstItem="2hF-ei-ypr" firstAttribute="centerX" secondItem="dLn-cs-abD" secondAttribute="centerX" id="Rs0-ho-0VG"/>
+                            <constraint firstItem="dLn-cs-abD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UlP-ZB-KaX"/>
+                            <constraint firstItem="bcw-oK-HfK" firstAttribute="top" secondItem="2hF-ei-ypr" secondAttribute="bottom" constant="27" id="WGj-Vj-A68"/>
+                            <constraint firstItem="bcw-oK-HfK" firstAttribute="height" secondItem="2hF-ei-ypr" secondAttribute="height" id="XTZ-O2-SNB"/>
+                            <constraint firstItem="bcw-oK-HfK" firstAttribute="centerX" secondItem="2hF-ei-ypr" secondAttribute="centerX" id="Zw8-wv-xgM"/>
+                            <constraint firstItem="2hF-ei-ypr" firstAttribute="top" secondItem="dLn-cs-abD" secondAttribute="bottom" constant="27" id="aK5-ZA-ejI"/>
+                            <constraint firstItem="dLn-cs-abD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="dUR-c2-e2M"/>
+                            <constraint firstItem="88n-nm-4lY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="el7-fj-3SS"/>
+                            <constraint firstItem="hma-hW-1mx" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.05" id="g7C-yP-WPF"/>
+                            <constraint firstItem="Hg3-aT-U9R" firstAttribute="height" secondItem="bcw-oK-HfK" secondAttribute="height" id="gr2-hj-Xzi"/>
+                            <constraint firstItem="hma-hW-1mx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nTD-PY-8lQ"/>
+                            <constraint firstItem="hma-hW-1mx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="nfX-Ag-tMo"/>
+                            <constraint firstItem="Hg3-aT-U9R" firstAttribute="centerX" secondItem="bcw-oK-HfK" secondAttribute="centerX" id="rjU-59-UaU"/>
+                            <constraint firstItem="Hg3-aT-U9R" firstAttribute="top" secondItem="bcw-oK-HfK" secondAttribute="bottom" constant="27" id="uMj-uj-pBp"/>
+                            <constraint firstItem="88n-nm-4lY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="urc-I3-hxQ"/>
+                            <constraint firstItem="Hg3-aT-U9R" firstAttribute="width" secondItem="bcw-oK-HfK" secondAttribute="width" id="yjm-9e-MWj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="bcw-oK-HfK" id="kbm-DL-AGI"/>
+                        <outlet property="firstname" destination="dLn-cs-abD" id="0YS-VD-r4g"/>
+                        <outlet property="id" destination="Hg3-aT-U9R" id="rR9-dg-nep"/>
+                        <outlet property="lastname" destination="2hF-ei-ypr" id="1EF-M8-xzP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
